@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import sys
-from stripper import removeBlackListedParameters
+from url_cleaner import removeBlackListedParameters
 
 
 while True:
