@@ -34,6 +34,9 @@ chown -R squid:squid url_cleaner
 
 # Give users execute access to the squid_url_cleaner program
 chmod +x url_cleaner/squid_url_cleaner.py
+
+# Verify unit tests
+python -m unittest url_cleaner/url_cleaner_test
 ```
 
 Add the following configuration entries into your /etc/squid/squid.conf file:

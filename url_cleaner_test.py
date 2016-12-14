@@ -2,7 +2,7 @@ import unittest
 from url_cleaner import removeBlackListedParameters
 
 
-class TestStripperMethods(unittest.TestCase):
+class TestUrlCleanerMethods(unittest.TestCase):
     def test_simple(self):
         url = 'http://deakin.edu.au/?utm_mkt=simple'
         expected = 'http://deakin.edu.au/'
