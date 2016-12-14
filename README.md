@@ -56,9 +56,9 @@ url_rewrite_access allow URLS_WITH_PARAMS
 Reload Squid:
 
 ```bash
-# < CentOS 5 / RHEL 5
+# <= CentOS 5 / RHEL 5
 service squid reload
 
-# > Centos 6 / RHEL 6
+# >= Centos 6 / RHEL 6
 systemctl reload squid
 ```
