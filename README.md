@@ -21,16 +21,16 @@ http://mywebsite.com.au/search?query=test
 
 ```bash
 # Login as root
-sudo su
+sudo su -
 
 # Navigate to the squid directory
 cd /etc/squid/
 
 # Pull in code from git repo, alternatively you'll need to manually transfer all files into this folder
-git clone https://github.com/Ladoo/url_cleaner.git
+git clone --depth 1 https://github.com/Ladoo/url_cleaner.git
 
 # Give Squid ownership of these files
-chown -R squid:squid url_cleaner
+chown -R squid:squid url_cleaner/
 
 # Give users execute access to the squid_url_cleaner program
 chmod +x url_cleaner/squid_url_cleaner.py
