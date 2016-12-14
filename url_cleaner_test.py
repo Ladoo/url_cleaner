@@ -52,6 +52,13 @@ class TestUrlCleanerMethods(unittest.TestCase):
             expected, removeBlackListedParameters(url)
         )
 
+    def test_auto_tracking_code(self):
+        url = 'http://www.deakin.edu.au/courses/courses-by-atar?utm_source=google&utm_medium=searchsitelink&utm_campaign=cop17q2&gclid=CjwKEAiAj7TCBRCp2Z22ue-zrj4SJACG7SBEvbyxndI4p53AAPNJBAKtWM846hI23DWBQuCencZ5KxoCM7Tw_wcB'
+        expected = 'http://www.deakin.edu.au/courses/courses-by-atar'
+        self.assertEqual(
+            expected, removeBlackListedParameters(url)
+        )
+
 
 if __name__ == '__main__':
     unittest.main()

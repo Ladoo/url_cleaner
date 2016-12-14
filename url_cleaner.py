@@ -8,7 +8,7 @@ def removeBlackListedParameters(url):
     filtered = dict(
         (k, v)
         for k, v in queryStrings.iteritems()
-        if not k.startswith('utm_') | k.startswith('mkt_')
+        if not k.startswith('utm_') | k.startswith('mkt_') | k.startswith('gclid')
     )
 
     return urlunparse([
